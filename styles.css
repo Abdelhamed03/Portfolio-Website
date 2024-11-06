@@ -1,19 +1,23 @@
 /* General Body and Page Styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #e5e5e5; /* Soft light gray for overall page background */
 }
 
 /* Navigation Bar Styles */
 nav {
-    background-color: #003366; /* Dark Blue */
+    background-color: #012a4a; /* Darker Navy Blue for professional feel */
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -24,158 +28,213 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    padding: 8px;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #00509e; /* Slightly Lighter Blue */
-    border-radius: 4px;
+    background-color: #0077b6; /* Lighter Blue on hover */
+    border-radius: 5px;
+    color: #f5f7fa;
 }
 
 /* Section Headers */
 h1, h2 {
-    color: #003366; /* Dark Blue */
+    color: #012a4a; /* Dark Blue for consistency */
+    font-weight: 700;
 }
 
 h1 {
-    font-size: 2.2em;
+    font-size: 2.4em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.8em;
-    margin-top: 30px;
-    text-align: left;
+    font-size: 2em;
+    margin-top: 40px;
+    text-align: center;
 }
 
 /* About Me and General Sections */
 section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f0f0f0; /* Light neutral gray to replace white */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* About Me Image Styling */
-#about img {
+/* Image Styling */
+img {
     display: block;
-    margin: 20px auto;
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 400px;
 }
+.job-image {
+    width: 200px; /* Explicit width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Makes sure images don’t overflow their container */
+    display: block;
+    margin: 10px auto; /* Centers the image */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* Profile Image Styling */
+.profile-image {
+    width: 300px; /* Explicit width for the profile picture */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Makes sure the image does not overflow its container */
+    display: block; /* Centers the image when combined with margin */
+    margin: 20px auto; /* Center the image horizontally with top and bottom margin */
+    border-radius: 50%; /* Circular image if the image is square */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a nice shadow for a 3D effect */
+}
+
 
 /* Technical Skills List */
 ul {
-    padding-left: 20px;
+    padding-left: 40px;
     list-style-type: disc;
+    margin-top: 20px;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
 /* Button for Resume Download */
 button {
     display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #003366; /* Dark Blue */
+    margin: 30px auto;
+    padding: 12px 25px;
+    background-color: #0077b6; /* Vibrant Blue */
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 1em;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background-color: #00509e; /* Slightly Lighter Blue */
+    background-color: #0096c7; /* Even Lighter Blue */
+    transform: translateY(-3px);
 }
 
 /* Contact Form */
 form {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #f7f7f7; /* Soft gray for form background */
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 input[type="text"], input[type="email"], textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
     font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #0077b6; /* Lighter blue on focus */
+    outline: none;
 }
 
 input[type="submit"] {
-    background-color: #003366; /* Dark Blue */
+    background-color: #0077b6; /* Vibrant Blue */
     color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 4px;
+    padding: 12px 30px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 input[type="submit"]:hover {
-    background-color: #00509e;
+    background-color: #0096c7;
+    transform: translateY(-3px);
 }
 
 /* Projects Section */
 .project-card {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7; /* Soft gray to match other sections */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h2 {
     margin-top: 0;
+    color: #012a4a;
+    font-size: 1.8em;
+    text-align: left;
 }
 
 .project-card a {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
     text-decoration: none;
-    color: #003366;
+    color: #0077b6;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .project-card a:hover {
-    color: #00509e;
+    color: #0096c7;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 15px 0;
-    background-color: #003366;
+    padding: 20px 0;
+    background-color: #012a4a;
     color: white;
-    position: fixed;
+    position: sticky;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
+
 /* Modal Styling */
 .modal {
     display: none;
@@ -184,28 +243,25 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
+    z-index: 1001;
 }
 
 .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 500px;
-    margin: auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 .close-modal {
-    float: right;
+    position: absolute;
+    top: 10px;
+    right: 15px;
     font-size: 1.5em;
     cursor: pointer;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+    color: #33
