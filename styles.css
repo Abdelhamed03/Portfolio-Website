@@ -1,20 +1,20 @@
 /* General Body and Page Styles */
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: #333;
+    color: #e0e0e0;
     line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #e5e5e5; /* Soft light gray for overall page background */
+    background-color: #454242; /* Slightly lighter dark gray for a softer tech feel */
 }
 
 /* Navigation Bar Styles */
 nav {
-    background-color: #012a4a; /* Darker Navy Blue for professional feel */
-    color: white;
+    background-color: #2a2929; /* Lighter dark gray for the nav */
+    color: #e0e0e0;
     padding: 15px 0;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1em;
@@ -41,14 +41,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #0077b6; /* Lighter Blue on hover */
+    background-color: #03dac6; /* Teal highlight for hover */
     border-radius: 5px;
-    color: #f5f7fa;
+    color: #2c2c2c;
 }
 
 /* Section Headers */
 h1, h2 {
-    color: #012a4a; /* Dark Blue for consistency */
+    color: #03dac6; /* Bright teal for techy contrast */
     font-weight: 700;
 }
 
@@ -70,9 +70,15 @@ section {
     max-width: 900px;
     margin: 40px auto;
     padding: 30px;
-    background-color: #f0f0f0; /* Light neutral gray to replace white */
+    background: linear-gradient(145deg, #3a3a3a, #444444); /* Lighter gradient for a softer look */
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Card and Contact Form Backgrounds */
+.project-card, form {
+    background: linear-gradient(145deg, #3a3a3a, #444444); /* Lighter gradient */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Image Styling */
@@ -80,30 +86,21 @@ img {
     display: block;
     margin: 25px auto;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     width: 70%;
     max-width: 400px;
 }
-.job-image {
-    width: 200px; /* Explicit width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Makes sure images don’t overflow their container */
-    display: block;
-    margin: 10px auto; /* Centers the image */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+
 /* Profile Image Styling */
 .profile-image {
-    width: 300px; /* Explicit width for the profile picture */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Makes sure the image does not overflow its container */
-    display: block; /* Centers the image when combined with margin */
-    margin: 20px auto; /* Center the image horizontally with top and bottom margin */
-    border-radius: 50%; /* Circular image if the image is square */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a nice shadow for a 3D effect */
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
-
 
 /* Technical Skills List */
 ul {
@@ -122,19 +119,19 @@ button {
     display: block;
     margin: 30px auto;
     padding: 12px 25px;
-    background-color: #0077b6; /* Vibrant Blue */
-    color: white;
+    background-color: #03dac6;
+    color: #2c2c2c;
     border: none;
     border-radius: 8px;
     font-size: 1.1em;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 button:hover {
-    background-color: #0096c7; /* Even Lighter Blue */
+    background-color: #00bfa5;
     transform: translateY(-3px);
 }
 
@@ -143,9 +140,9 @@ form {
     max-width: 700px;
     margin: 0 auto;
     padding: 30px;
-    background-color: #f7f7f7; /* Soft gray for form background */
+    background: linear-gradient(145deg, #3a3a3a, #444444); /* Matching gradient for consistency */
     border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 label {
@@ -153,26 +150,29 @@ label {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 1.1em;
+    color: #e0e0e0;
 }
 
 input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 25px;
-    border: 2px solid #ccc;
+    border: 2px solid #333;
     border-radius: 6px;
     font-size: 1em;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
     transition: border-color 0.3s ease;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-    border-color: #0077b6; /* Lighter blue on focus */
+    border-color: #03dac6; /* Lighter blue-teal on focus */
     outline: none;
 }
 
 input[type="submit"] {
-    background-color: #0077b6; /* Vibrant Blue */
-    color: white;
+    background-color: #03dac6; /* Vibrant Teal */
+    color: #2c2c2c;
     border: none;
     padding: 12px 30px;
     border-radius: 8px;
@@ -180,32 +180,32 @@ input[type="submit"] {
     font-size: 1.1em;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 input[type="submit"]:hover {
-    background-color: #0096c7;
+    background-color: #00bfa5;
     transform: translateY(-3px);
 }
 
 /* Projects Section */
 .project-card {
-    background-color: #f7f7f7; /* Soft gray to match other sections */
+    background: linear-gradient(145deg, #3a3a3a, #444444); /* Dark gradient for project cards */
     padding: 25px;
     margin-bottom: 30px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
 }
 
 .project-card h2 {
     margin-top: 0;
-    color: #012a4a;
+    color: #03dac6; /* Teal for headings */
     font-size: 1.8em;
     text-align: left;
 }
@@ -214,25 +214,25 @@ input[type="submit"]:hover {
     display: inline-block;
     margin-top: 15px;
     text-decoration: none;
-    color: #0077b6;
+    color: #03dac6;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .project-card a:hover {
-    color: #0096c7;
+    color: #00bfa5; /* Slightly darker teal */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #012a4a;
-    color: white;
+    background-color: #3a3a3a; /* Lighter dark gray for footer */
+    color: #e0e0e0;
     position: sticky;
     width: 100%;
     bottom: 0;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Modal Styling */
@@ -243,18 +243,19 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); /* Lighter opacity for modal background */
     justify-content: center;
     align-items: center;
     z-index: 1001;
 }
 
 .modal-content {
-    background-color: #ffffff;
+    background: #3a3a3a; /* Lighter dark gray for modal content */
     padding: 25px;
     border-radius: 10px;
     max-width: 600px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
     position: relative;
 }
 
@@ -264,4 +265,5 @@ footer {
     right: 15px;
     font-size: 1.5em;
     cursor: pointer;
-    color: #33
+    color: #03dac6;
+}
