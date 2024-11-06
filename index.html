@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed's Personal Portfolio - About Me, Contact, Technical Skills">
+    <title>Ahmed Abdelhamed - Portfolio Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="work.html">Work & Hobbies</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <img src="images/my_picture.jpg" alt="Picture of Ahmed Abdelhamed" width="250" height="270">
+        <p>I am a senior at Lake Forest College, set to graduate in December 2024 with a double major in Computer Science and Business and a minor in Data Science. My strong academic track record, including a 3.78 GPA and Dean's List honors, reflects my dedication and ability to excel in both technical and analytical disciplines. Through internships in IT and data analysis, I've developed a robust skill set in data-driven decision-making, automation, and system integrations. Additionally, my role as captain of the college soccer team has honed my leadership, teamwork, and strategic thinking skills. I am now eager to apply my analytical and problem-solving capabilities to a Business Analyst or Financial Analyst role, where I can contribute to and learn from impactful projects in the tech and finance sectors.</p>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, Java</li>
+            <li>React.js (Basics)</li>
+            <li>SQL and Databases, R </li>
+            <li>Version Control: Git & GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to reach out, feel free to send me a message:</p>
+        <form action="mailto:fananahmedyamen@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <script src="scripts.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>

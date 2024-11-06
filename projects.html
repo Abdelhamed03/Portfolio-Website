@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed's Projects - Software and Web Development Projects">
+    <title>Ahmed Abdelhamed - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="work.html">Work & Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>My Projects</h1>
+
+        <!-- Project Card 1: Personal Website -->
+        <div class="project-card">
+            <h2>Personal Portfolio Website</h2>
+            <p>Built a personal website to enhance my software engineering skills for web applications, showcasing various projects.</p>
+            <a href="https://fananahmedyamen.wixsite.com/personal-computer-sc" target="_blank">View Online</a>
+            <button onclick="showModal('modal-portfolio')">More Details</button>
+            <div id="modal-portfolio" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal" onclick="closeModal('modal-portfolio')">&times;</span>
+                    <h2>Personal Portfolio Website</h2>
+                    <p>
+                        This project demonstrates my skills in:
+                        <ul>
+                            <li>HTML, CSS for the design and styling</li>
+                            <li>JavaScript for creating interactive elements</li>
+                            <li>Creating responsive layouts to provide a good user experience across all devices</li>
+                        </ul>
+                    </p>
+                    <p>This portfolio includes my educational background, work experience, projects, and skills to assist recruiters in evaluating my abilities.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 2: Sign Up and Log In Website -->
+        <div class="project-card">
+            <h2>Sign Up and Log In Website</h2>
+            <p>Developed a website that allows users to create accounts and securely log in to their accounts.</p>
+            <a href="https://github.com/yourusername/signup-login-website" target="_blank">View on GitHub</a>
+            <button onclick="showModal('modal-signup')">More Details</button>
+            <div id="modal-signup" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal" onclick="closeModal('modal-signup')">&times;</span>
+                    <h2>Sign Up and Log In Website</h2>
+                    <p>
+                        Features:
+                        <ul>
+                            <li>User authentication, including account creation and secure logins</li>
+                            <li>Ongoing security checks to maintain data integrity</li>
+                            <li>Data stored in secure databases for efficient and safe access</li>
+                        </ul>
+                    </p>
+                    <p>This project focuses on backend security practices and user data management for web applications.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 3: Spotify Data Project -->
+        <div class="project-card">
+            <h2>Spotify Data Analysis Project</h2>
+            <p>Utilized the Spotify API and R to analyze streaming information and generate insights about specific artists.</p>
+            <a href="https://github.com/yourusername/spotify-data-analysis" target="_blank">View on GitHub</a>
+            <button onclick="showModal('modal-spotify')">More Details</button>
+            <div id="modal-spotify" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal" onclick="closeModal('modal-spotify')">&times;</span>
+                    <h2>Spotify Data Analysis Project</h2>
+                    <p>
+                        Tools and Skills Used:
+                        <ul>
+                            <li>Spotifyr Package for data extraction</li>
+                            <li>Data analysis and manipulation using R</li>
+                            <li>Creation of a research paper using RMarkdown, including hypotheses and conclusions</li>
+                        </ul>
+                    </p>
+                    <p>This project highlights my skills in data analysis, R programming, and the ability to derive insights from real-world data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link to External JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
